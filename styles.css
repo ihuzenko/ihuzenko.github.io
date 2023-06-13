@@ -34,8 +34,6 @@
   --color-txt-second: #193d53;
   --color-txt-light: #fdf2bf;
 
-  /* --color-bg-main: #f4fadb; */
-  /* --color-bg-main: #dce1c5; */
   --color-bg-main: #fefbec;
 
   --color-bg-second: #193d53;
@@ -226,7 +224,6 @@ a:active {
 }
 
 .company {
-  /* border: 1px solid red; */
   margin-top: var(--mgn-xs);
 }
 
@@ -317,12 +314,10 @@ footer {
 }
 
 .menu-btn.active .menu-btn-bar:nth-child(1) {
-  /* transform: translateY(8px) rotate(45deg); */
   transform: translateY(0.8rem) rotate(45deg);
 }
 
 .menu-btn.active .menu-btn-bar:nth-child(3) {
-  /* transform: translateY(-8px) rotate(-45deg); */
   transform: translateY(-0.8rem) rotate(-45deg);
 }
 
@@ -421,4 +416,43 @@ footer {
 
 .contacts-heading {
   color: var(--color-txt-light);
+}
+
+/* ---------- SMALLER SCREENS ---------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  :root {
+    --header-height: 6.8rem;
+  }
+
+  .header-content {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .job-title {
+    font-size: var(--font-xs);
+  }
+
+  .body-content {
+    width: 95%;
+    font-size: var(--font-xs);
+    line-height: 2rem;
+  }
+
+  .stack-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stack-list li {
+    font-weight: var(--font-wn);
+  }
+
+  .stack-sub-list {
+    font-size: var(--font-m);
+  }
+
+  .stack-icon {
+    width: 3rem;
+    height: 3rem;
+  }
 }
